@@ -9,4 +9,4 @@ if DATABASE_URL.startswith("postgres://"):
 elif DATABASE_URL.startswith("postgresql://") and "+asyncpg" not in DATABASE_URL:
     DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
 SUPPORT_USERNAME = os.getenv("SUPPORT_USERNAME", "@your_support")
-python-telegram-bot>=20,<23
+
